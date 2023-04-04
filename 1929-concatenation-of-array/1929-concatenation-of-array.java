@@ -13,7 +13,7 @@ class Solution {
 
         // 3. create for loop the iterates through the nums array
         // and inserts the element of the nums array into the ans 
-        // array at position i and i+n-1
+        // array at position i and i+n
         for (int i = 0; i < nums.length; i++) {
             ans[i] = nums[i];
             ans[i + length ] = nums[i];
