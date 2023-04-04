@@ -9,7 +9,7 @@ class Solution {
         // 3. create for loop then iterates through the nums array
         // and inserts the element of the nums array into the ans 
         // array 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < length; i++) {
             ans[i] = nums[nums[i]];
         }
         
