@@ -4,16 +4,14 @@ class Solution:
         length = len(nums)
         
         # 2. create an empty array of size 2n 
-        ans = []
+        ans = [0] * (2 * length)
         
         """
-        3. create for loop the iterates through the nums array
-         and inserts the element of the nums array into the ans 
-         array at position i and i+n
+        3. use list comprehension to insert the element of the nums array 
+           into the ans array at position i and i+n
         """
-        for i in range(0,length):
-            ans.insert(i,nums[i] ) 
-            ans.insert(i+length,nums[i] ) 
+        ans[:length] = nums
+        ans[length:] = nums
         
         return ans
         
