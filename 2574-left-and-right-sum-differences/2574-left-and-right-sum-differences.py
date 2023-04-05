@@ -13,10 +13,10 @@ class Solution:
         The second for loop calculates the absolute difference between the sum of the first i-1 elements
         and the sum of the last n-i+1 elements, for i in the range 1 to n-1 inclusive.
         """
-        x = 0
-        temp = []
-        for num in nums:
-            x += num
+        x = nums[0]
+        temp = [x]
+        for i in range(1, len(nums)):
+            x += nums[i]
             temp.append(x)
         
         ans = []
